@@ -73,12 +73,12 @@ namespace ListaDeContatosT7
         }
 
         //sobrescrve o metodo ToString()
-        //polimofismo
+        //polimorfismo
         public override string ToString()
         {
             string saida = string.Empty; //Boa pratica de programacao
-            saida += String.Format("{0}, {1}", Nome, Sobrenome);
-            saida += String.Format("({0}) {1}-{2}", Telefone.Substring(0,2), Telefone.Substring(2,5), Telefone.Substring(7,4));
+            saida += String.Format("{0} {1}", Nome,Sobrenome);
+            saida += String.Format(" - ({0}) {1}-{2}", Telefone.Substring(0,2), Telefone.Substring(2,5), Telefone.Substring(7,4));
             return saida;
 
         }
