@@ -67,6 +67,7 @@
             this.textBoxSobrenome.Name = "textBoxSobrenome";
             this.textBoxSobrenome.Size = new System.Drawing.Size(290, 26);
             this.textBoxSobrenome.TabIndex = 3;
+            this.textBoxSobrenome.TextChanged += new System.EventHandler(this.textBoxSobrenome_TextChanged);
             // 
             // texBoxTelefone
             // 
@@ -75,6 +76,7 @@
             this.texBoxTelefone.Name = "texBoxTelefone";
             this.texBoxTelefone.Size = new System.Drawing.Size(290, 26);
             this.texBoxTelefone.TabIndex = 4;
+            this.texBoxTelefone.TextChanged += new System.EventHandler(this.texBoxTelefone_TextChanged);
             // 
             // lable1
             // 
@@ -114,6 +116,7 @@
             this.listBoxContatos.Name = "listBoxContatos";
             this.listBoxContatos.Size = new System.Drawing.Size(279, 303);
             this.listBoxContatos.TabIndex = 8;
+            this.listBoxContatos.SelectedIndexChanged += new System.EventHandler(this.listBoxContatos_SelectedIndexChanged);
             // 
             // Form1
             // 
@@ -129,7 +132,8 @@
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.addContato);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Lista de contatos";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
